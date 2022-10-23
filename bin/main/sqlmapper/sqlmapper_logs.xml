@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.portfolio.dyport.mapper.LogsMapper">
+
+<!-- 로그 전체 조회 -->
+
+	<insert id="insertLogs">
+		INSERT INTO emp_logs
+		(
+			ip,
+			url,
+			http_method,
+			create_at
+		)
+		VALUES
+		(
+			#{ip},
+			#{url},
+			#{httpMethod},
+			NOW()
+		)
+	
+	</insert>
+
+<!-- 로그 전체 조회 -->
+
+	<select id="selectLogs" resultType="LogsVO">
+		SELECT
+			log_id AS logId,
+			ip,
+			url,
+			http_method AS httpMethod,
+			create_at AS createAt
+		FROM emp_logs
+	</select>
+	
+	
+<!-- 선택 로그 조회 -->
+
+	<select id="selectLogsByLogId" resultType="LogsVO">
+		SELECT
+			log_id AS logId,
+			ip,
+			url,
+			http_method AS httpMethod,
+			create_at AS createAt
+			
+		FROM emp_logs
+		WHERE log_id = #{logId}
+	</select>
+	
+	
+	
+	
+	
+	
+</mapper>
