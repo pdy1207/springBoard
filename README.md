@@ -1,6 +1,5 @@
-# 🖥 API 명세서
+# 🖥 API !
 
-[EMP정보체계_기능명세서_개발일정관리.xlsx](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e353af16-8e48-4020-99ea-7f3003637054/EMP%EC%A0%95%EB%B3%B4%EC%B2%B4%EA%B3%84_%EA%B8%B0%EB%8A%A5%EB%AA%85%EC%84%B8%EC%84%9C_%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A0%95%EA%B4%80%EB%A6%AC.xlsx)
 
 <details>
    <summary> 
